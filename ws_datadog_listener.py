@@ -79,7 +79,7 @@ METRIC_ERRORS   = os.getenv("DD_METRIC_ERRORS",  "websocket.listener.errors")
 BASE_TAGS       = [
     "source:websocket_listener",
     f"env:{os.getenv('DD_ENV', 'production')}",
-    "site:govcloud",   # identifies metrics as originating from GovCloud deployment
+    "site:ddog-gov.com",   # identifies metrics as originating from GovCloud deployment
 ]
 
 # Reconnect settings
